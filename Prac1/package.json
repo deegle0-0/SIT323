@@ -1,9 +1,0 @@
-{
-    "name":"node-server",
-    "description": "A sample",
-    "dependencies": {
-        "express":"*"
-    },
-    "author": "Neym",
-    "license": "MIT"
-}
