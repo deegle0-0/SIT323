@@ -1,1 +1,7 @@
 
+** To run **
+
+
+Type "npm install" to install dependencies 
+
+after dependencies are installed, type node .\filename.js to run 
