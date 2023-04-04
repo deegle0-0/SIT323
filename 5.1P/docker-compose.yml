@@ -1,0 +1,17 @@
+version: '3'
+services:
+    app:
+        build: .
+        image: deegle/node-web-app
+        restart: always
+        ports:
+            - 40000:3000
+        command: node server.js
+
+
+
+# TO Run 
+# docker compose up 
+# ------------------------
+# 07ca6e67ca97  172.17.0.3
+# 047e2b5c0a9a  172.17.0.2
