@@ -1,0 +1,26 @@
+version: '3'
+services:
+    app:
+        build: .
+        image: deegle/node-web-app
+        restart: always
+        ports:
+            - 40000:3000
+        command: node server.js
+
+# This is kubernetes file with all data that it needs to run 
+# This one thing is a pod 
+
+# TO Run 
+# docker compose up 
+# ------------------------
+# 07ca6e67ca97  172.17.0.3
+# 047e2b5c0a9a  172.17.0.2
+#
+# docker network create NETWORK -- docker network create [networkname]
+#54ff1f797c4dd17d5fc7156b1577525626b65b44c81c3c16477b41dc51b3d431
+# https://docs.docker.com/engine/reference/commandline/network_create/#options
+
+# docket network inspect bridge  bridge is the driver 
+
+
