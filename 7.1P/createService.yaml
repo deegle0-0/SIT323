@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myservice
+spec:
+  selector:
+    tier: frontend # label neeeds to be the same as pods
+  ports:
+    - protocol: TCP
+      port: 3434 #the user exposed port Service port  
+      targetPort: 8080  #my app setup port 
+  type: LoadBalancer
